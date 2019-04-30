@@ -1,0 +1,14 @@
+
+  <div class="card border-dark mb-3"  style="width: 18rem; float: left;">
+    <div class="card-body">
+        <div class="card-title">My Heroes</div>
+    </div>
+      <ul class="list-group list-group-flush heroes">
+        <li type="button" class="list-group-item list-group-item-action" [class.selected]="hero === selectedHero" *ngFor="let hero of heroes" (click)="onSelect(hero)">
+          <span class="badge badge-dark">{{ hero.id }}</span> {{ hero.name }}
+        </li>
+      </ul>
+  </div>
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  
+

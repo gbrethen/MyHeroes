@@ -1,0 +1,15 @@
+.selected {
+    background-color: #CFD8DC !important;
+    color: #fff;
+    border-color:  #000;
+}
+
+.heroes li {
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.heroes li:hover {
+    background-color: #BBD8DC !important;
+    color: #fff;
+}
