@@ -1,6 +1,17 @@
-<div class="card" *ngIf="hero" style="float: left; margin-left:10px; width: 36rem;">
-    <div class="card-body">
-      <h4 class="card-title">{{ hero.name | uppercase }}</h4>
-
+<div class="card mb-3" *ngIf="hero" style="float: left; margin-left:10px; min-width: 540px; max-width: 800px;">
+  <div class="row no-gutters">
+    <div class="col-md-3">
+      <img src="{{ hero.data.results[0].thumbnail.path + '/portrait_xlarge.' + hero.data.results[0].thumbnail.extension}}" class="card-img" style="width: 150px; height: 225px;" /> 
     </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h4 class="card-title">{{ hero.data.results[0].name | uppercase }}</h4>
+        <p class="card-text">{{ hero.data.results[0].description }}</p>
+        <button type="button" class="btn btn-secondary" (click)="goBack()">Go Back</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <b>Data provided by Marvel. &copy; 2014 Marvel</b>
+  </div>
 </div>

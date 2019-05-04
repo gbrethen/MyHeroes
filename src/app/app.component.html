@@ -1,11 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <span class="navbar-brand mb-0 h1">
     {{ title }}
   </span>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/heroes">Heroes</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/dashboard">Dashboard</a>
+        </li>
+    </ul>
+  </div>
 </nav>
 <div style="margin-top:10px; float: left;">
-  <app-heroes></app-heroes>
+  <router-outlet></router-outlet>
+</div>
+<div style="margin-top:10px; float: right;">
+  <app-messages></app-messages>
 </div>
 
 

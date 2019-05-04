@@ -1,14 +1,14 @@
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
-    { id: 11, name: 'Spider Man' },
-    { id: 12, name: 'Iron Man' },
-    { id: 13, name: 'The Hulk' },
-    { id: 14, name: 'Vision' },
-    { id: 15, name: 'Dr. Strange' },
-    { id: 16, name: 'Captain America' },
-    { id: 17, name: 'Captain Marvel' },
-    { id: 18, name: 'The Black Panther' },
-    { id: 19, name: 'Ant Man' },
-    { id: 20, name: 'Thor' }
+    { id: 1009610, name: 'Spider Man', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009368, name: 'Iron Man', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009351, name: 'The Hulk', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009697, name: 'Vision', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009282, name: 'Dr. Strange', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009220, name: 'Captain America', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1017078, name: 'Nova', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009187, name: 'The Black Panther', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1010801, name: 'Ant Man', description: '', imgPath: '', imgSuffix: '' },
+    { id: 1009664, name: 'Thor', description: '', imgPath: '', imgSuffix: '' }
 ];

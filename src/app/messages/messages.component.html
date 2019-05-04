@@ -1,0 +1,10 @@
+<div class="card" *ngIf="messageService.messages.length">
+  <div class="card-header">
+      <h5>Messages</h5>
+  </div>
+  <div class="card-body">
+      <button class="btn btn-primary" (click)="messageService.clear()">Clear</button>
+      <br/><br/>
+      <div *ngFor="let message of messageService.messages">{{ message }}</div>
+  </div>
+</div>
