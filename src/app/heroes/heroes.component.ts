@@ -9,13 +9,6 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
 
-  hero: Hero = {
-    id: 1009282,
-    name: 'Doctor Strange',
-    description: '',
-    imgPath: '',
-    imgSuffix: ''
-  };
   heroes: Hero[];
 
   constructor(private heroService: HeroService) { }
